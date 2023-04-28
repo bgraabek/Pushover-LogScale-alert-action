@@ -1,0 +1,19 @@
+name: Pushover
+endpoint: https://api.pushover.net/1/messages.json
+allowInsecureSSL: false
+$schema: https://schemas.humio.com/action/v0.5.0
+method: POST
+body: |-
+  {
+  "token":"<API token>",
+  "user":"<user key>",
+  "title":"{name}",
+  "html":1,
+  "message":
+  "Include any message and LogScale variable in the alert such as
+  {events_html}"
+  }
+headers:
+- header: Content-Type
+  value: application/json
+type: webhook
