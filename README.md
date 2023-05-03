@@ -13,7 +13,7 @@ To make use of this LogScale alert action:
  * Enter an action name
  * Click "From template"
  * Load the Pushover.yaml file
- * Click Continue
+ * Click "Continue"
  * Modify the "token" and "user" values in the "Message body template"
  * Modify the "message" so your alerts fit your requirements
  * Once you've modified at least the "token" and "user" values, click "Save action"
